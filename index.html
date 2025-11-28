@@ -49,35 +49,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      (function () {
-        var correctPassword = 'JB2025';
-
-        function loadApp() {
-          var script = document.createElement('script');
-          script.type = 'module';
-          script.src = '/src/main.tsx';
-          document.body.appendChild(script);
-        }
-
-        function askPassword() {
-          var input = window.prompt('Bitte Passwort eingeben:');
-          if (input === null) {
-            // Wenn der Dialog abgebrochen wird, einfach erneut fragen
-            askPassword();
-            return;
-          }
-
-          if (input === correctPassword) {
-            loadApp();
-          } else {
-            window.alert('Falsches Passwort. Bitte erneut versuchen.');
-            askPassword();
-          }
-        }
-
-        askPassword();
-      })();
-    </script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
