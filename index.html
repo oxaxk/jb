@@ -64,12 +64,15 @@
   <body>
     <div id="root"></div>
     <script type="module">
-      const pass = prompt('Passwort eingeben:');
-      if (pass === 'JB2025') {
-        import('/src/main.tsx');
-      } else {
-        document.body.innerHTML = '';
-        alert('Falsches Passwort');
+      if (!window.__JB_AUTH_INITIALIZED__) {
+        window.__JB_AUTH_INITIALIZED__ = true;
+        const pass = prompt('Passwort eingeben:');
+        if (pass === 'JB2025') {
+          import('/src/main.tsx');
+        } else {
+          document.body.innerHTML = '';
+          alert('Falsches Passwort');
+        }
       }
     </script>
   </body>
