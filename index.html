@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JB BEAUTY – Hautbehandlungen, Laser &amp; Lymphdrainage in Pfullendorf</title>
+    <meta name="description" content="JB BEAUTY in Pfullendorf – professionelle Hautbehandlungen, Microneedling, Carbon Peeling, Lymphdrainage, G5-Massage und dauerhafte Haarentfernung mit Diodenlaser. Fokus auf echte Resultate und individuelle Beratung." />
+    <meta name="keywords" content="JB Beauty, Kosmetik Pfullendorf, Hautbehandlungen Pfullendorf, Microneedling, Carbon Peeling, Lymphdrainage, G5-Massage, Diodenlaser" />
+    <link rel="canonical" href="/" />
+    <meta name="last-modified" content="2025-11-28" />
+    
+    <!-- Social Media Tags -->
+    <meta property="og:title" content="JB BEAUTY – Hautbehandlungen, Laser &amp; Lymphdrainage in Pfullendorf" />
+    <meta property="og:description" content="Professionelle Hautbehandlungen, Lymphdrainage, G5-Massage und dauerhafte Haarentfernung mit Diodenlaser – mit Fokus auf Aufklärung und echte Vorher/Nachher-Ergebnisse." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="DE-BW" />
+    <meta name="geo.placename" content="Pfullendorf" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome and Remix Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "JB BEAUTY",
+      "description": "Professionelles Beauty-Studio in Pfullendorf mit Fokus auf Hautbehandlungen, Microneedling, Carbon Peeling, Lymphdrainage, G5-Massage und dauerhafte Haarentfernung mit Diodenlaser.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pfullendorf",
+        "addressRegion": "Baden-Württemberg",
+        "addressCountry": "DE"
+      },
+      "openingHours": "Mo-Fr 10:00-18:00",
+      "priceRange": "€€"
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function () {
+        var correctPassword = 'JB2025';
+
+        function loadApp() {
+          var script = document.createElement('script');
+          script.type = 'module';
+          script.src = '/src/main.tsx';
+          document.body.appendChild(script);
+        }
+
+        function askPassword() {
+          var input = window.prompt('Bitte Passwort eingeben:');
+          if (input === null) {
+            // Wenn der Dialog abgebrochen wird, einfach erneut fragen
+            askPassword();
+            return;
+          }
+
+          if (input === correctPassword) {
+            loadApp();
+          } else {
+            window.alert('Falsches Passwort. Bitte erneut versuchen.');
+            askPassword();
+          }
+        }
+
+        askPassword();
+      })();
+    </script>
+  </body>
+</html>
