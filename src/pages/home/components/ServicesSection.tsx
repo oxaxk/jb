@@ -47,7 +47,7 @@ export default function ServicesSection() {
     },
     {
       icon: 'ri-scissors-cut-line',
-      title: 'Dauerhafte Haarentfernung (Diodenlaser)',
+      title: 'Haarentfernung (Diodenlaser)',
       description:
         'Effektive Haarentfernung für Gesicht und Körper mit moderner Diodenlaser-Technologie – schonend, schnell und auf empfindliche Haut abgestimmt.',
       image: '/images/services/diodenlaser.jpg'
